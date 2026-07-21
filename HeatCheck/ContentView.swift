@@ -10,8 +10,6 @@ struct ContentView: View {
                 .ignoresSafeArea()
 
             VStack(spacing: 0) {
-                AdBannerSlotView(placement: .top)
-
                 ScrollView {
                     VStack(spacing: 16) {
                         Text("発熱スマホお知らせ")
@@ -31,8 +29,6 @@ struct ContentView: View {
                     }
                     .padding(16)
                 }
-
-                AdBannerSlotView(placement: .bottom)
             }
         }
         .onAppear {
